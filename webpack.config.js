@@ -3,7 +3,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.ts',
+  entry: path.resolve(__dirname, 'src/index.ts'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
@@ -20,6 +20,9 @@ module.exports = {
     hot: true,
     compress: true,
     historyApiFallback: true,
+  },
+  resolve: {
+    extensions: ['.ts', '.js', ''],
   },
   module: {
     rules: [
