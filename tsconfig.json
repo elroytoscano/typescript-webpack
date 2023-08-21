@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "lib": ["DOM", "ES2021"],
-    "watch": true,
     "target": "ES2021",
     "module": "CommonJS",
     "rootDir": "./src",
